@@ -11,8 +11,10 @@
     if ($senha != $senha2) {
         echo '<script>alert("Senhas devem ser iguais.")</script>';
         header("Refresh:3, url=cadastro.html");
+        $conn->close();
         return;
     }
+    $conn->close();
     $sql = "INSERT INTO usuarios (nome, email, senha)
     VALUES ('$nome', '$email', '$senha')";
     if (mysqli_query($conn, $sql)) {
