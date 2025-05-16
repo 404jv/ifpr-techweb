@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/cadastro.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <main>
+        <div class="about-title">
+            <img class="about-icon" src="assets/icons/about.png" alt="Icone Interativo">
+            <h1>ENTRAR NA SUA CONTA</h1>
+          </div>
+
+
+          <form method="POST" action="logar.php">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="Digite seu email">
+        
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="Digite sua senha">
+        
+            <input type="submit" value="ENVIAR">
+            <a href="cadastro.html" class="login-link">Não tem conta? Cadastre-se aqui.</a>
+          </form>
+
+          <section id="thankyou">
+            <div class="donation-title">
+              <img src="assets/icons/pawprint.png" alt="Icone de cachorro" />
+              <h1>A GENTE TE AGUARDA! ❤️</h1>
+            </div>
+        
+            <div class="dogs">
+              <img src="assets/dog1.png" alt="Foto de Cachorro" />
+              <img src="assets/dog2.png" alt="Foto de Cachorro" />
+              <img src="assets/dog3.png" alt="Foto de Cachorro" />
+            </div>
+          </section>
+    </main>
+</body>
+</html>

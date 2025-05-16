@@ -1,0 +1,39 @@
+main {
+  margin-top: 32px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.bazar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 80%;
+  min-height: 350px;
+  max-width: 25%;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8px;
+}
+
+@media (max-width: 600px) {
+  .bazar-items {
+    width: 100%;
+    padding: 4px;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 90%;
+    min-height: 360px;
+    max-width: 100%;
+  }
+}
+
